@@ -8,5 +8,6 @@
     <dimen name="elevation_2">8dp</dimen>
     <dimen name="corner_radius_1">4dp</dimen>
     
-    <dimen name="large_text">24sp</dimen>
+    <dimen name="large_text">12sp</dimen>
+    <dimen name="bigger_text">24sp</dimen>
 </resources>

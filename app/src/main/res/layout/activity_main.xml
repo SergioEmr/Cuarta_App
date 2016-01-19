@@ -14,6 +14,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/large_text"
+        android:textSize="@dimen/bigger_text"
         android:text="@string/disenio" />
 </LinearLayout>
