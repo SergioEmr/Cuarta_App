@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cuarta App</string>
+    <string name="conceptos_basicos">Conceptos Basicos</string>
+    <string name="material_desing">Material Design</string>
+    <string name="disenio">Diseño</string>
+    <string name="desarrollo">Desarrollo</string>
+    <string name="publicacion">Publicación</string>
+    <string name="settings">Settings</string>
+</resources>
