@@ -5,4 +5,5 @@
     <color name="colorAccent">#FFC107</color>
     <color name="colorWindowBackground">#E0E0E0</color>
     <color name="White">#FFFFFF</color>
+    <color name="Red_transparent">#ccF44336</color>
 </resources>
