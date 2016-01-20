@@ -2,28 +2,49 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_marginTop="@dimen/horizontal_margin_1"
-    android:layout_marginLeft="@dimen/vertical_margin_2"
-    android:layout_marginRight="@dimen/vertical_margin_2"
+    android:layout_marginLeft="@dimen/vertical_margin_1"
+    android:layout_marginRight="@dimen/vertical_margin_1"
     android:layout_marginBottom="@dimen/horizontal_margin_1"
     android:layout_width="match_parent"
     android:layout_height="160dp"
     card_view:cardCornerRadius="@dimen/corner_radius_1"
     card_view:cardElevation="@dimen/elevation_2"
     >
+
     <ImageView
         android:id="@+id/img_seccion"
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:scaleType="centerCrop" />
-
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_cardview"
+        android:orientation="horizontal"
+        android:background="@color/blue_transparent"
+        android:layout_gravity="bottom"
+        >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="@dimen/text_cardview"
-        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:paddingLeft="9dp"
+        android:gravity="left|center"
+        android:textSize="@dimen/big_text"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:id="@+id/txt_Seccion"
+        />
+    <TextView
+        android:id="@+id/txt_avance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
         android:gravity="center"
         android:textSize="@dimen/big_text"
         android:textColor="@color/White"
-        android:background="@color/Red_transparent"
-        android:id="@+id/txt_Seccion"
+        android:textStyle="bold"
+
         />
+</LinearLayout>
 </android.support.v7.widget.CardView>

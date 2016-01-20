@@ -27,11 +27,13 @@ public class adaptador_secciones extends RecyclerView.Adapter<adaptador_seccione
         // Campos respectivos de un item
         public ImageView imagen;
         public TextView nombre;
+        public TextView avance;
 
         public seccionesViewHolder(View v) {
             super(v);
             imagen = (ImageView) v.findViewById(R.id.img_seccion);
             nombre = (TextView) v.findViewById(R.id.txt_Seccion);
+            avance = (TextView) v.findViewById(R.id.txt_avance);
         }
     }
 
@@ -55,6 +57,7 @@ public class adaptador_secciones extends RecyclerView.Adapter<adaptador_seccione
     public void  onBindViewHolder(seccionesViewHolder viewHolder, int i) {
         viewHolder.imagen.setImageResource(items.get(i).getImagen());
         viewHolder.nombre.setText(items.get(i).getNombre());
+        viewHolder.avance.setText(items.get(i).getAvance());
 
     }
 }

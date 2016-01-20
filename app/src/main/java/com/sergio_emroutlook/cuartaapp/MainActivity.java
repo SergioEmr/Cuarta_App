@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
         List items = new ArrayList();
 
-        items.add(new Secciones(R.drawable.basicos, "Conceptos Basicos"));
-        items.add(new Secciones(R.drawable.material_design, "Material Design"));
-        items.add(new Secciones(R.drawable.disenio_grafico, "Diseño Grafico"));
-        items.add(new Secciones(R.drawable.desarrollo, "Desarrollo"));
-        items.add(new Secciones(R.drawable.publicacion, "Publicación"));
+        items.add(new Secciones(R.drawable.basicos, "Conceptos Basicos","20%"));
+        items.add(new Secciones(R.drawable.material_design, "Material Design","35%"));
+        items.add(new Secciones(R.drawable.disenio_grafico, "Diseño Grafico","40%"));
+        items.add(new Secciones(R.drawable.desarrollo, "Desarrollo","0%"));
+        items.add(new Secciones(R.drawable.publicacion, "Publicación","70%"));
         // Obtener el Recycler
         recycler = (RecyclerView) findViewById(R.id.recycler);
         recycler.setHasFixedSize(true);
