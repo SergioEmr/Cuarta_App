@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 
 import com.sergio_emroutlook.cuartaapp.adaptadores.adaptador_secciones;
 import com.sergio_emroutlook.cuartaapp.domain.Secciones;
@@ -11,15 +13,19 @@ import com.sergio_emroutlook.cuartaapp.domain.Secciones;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     private RecyclerView recycler;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager lManager;
+    private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        toolbar = (Toolbar) findViewById(R.id.mi_toolbar);
+        setSupportActionBar(toolbar);
 
         List items = new ArrayList();
 
@@ -39,5 +45,11 @@ public class MainActivity extends AppCompatActivity {
 // Crear un nuevo adaptador
         adapter = new adaptador_secciones(items);
         recycler.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main,menu);
+        return true;
     }
 }
